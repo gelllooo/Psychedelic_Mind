@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h1>{{ post.title }}</h1>
+    <p class="date">{{ post.date }}</p>
+
+    {% if post.image %}
+        <img src="{{ url_for('static', filename='uploads/' + post.image) }}" width="100%">
+    {% endif %}
+
+    <p>{{ post.content }}</p>
+
+    <br>
+    <a href="/">← Back</a>
+</div>
+
+</body>
+</html>

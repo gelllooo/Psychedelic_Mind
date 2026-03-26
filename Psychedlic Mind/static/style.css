@@ -1,0 +1,73 @@
+body {
+    font-family: "Courier New", cursive;
+    background-color: #fdf6f0;
+    color: #4b3f3f;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-family: "Georgia", serif;
+}
+
+/* Card (paper look) */
+.card {
+    background: #fffaf5;
+    border: 2px dashed #c9a9a6;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Tape effect */
+.card::before {
+    content: "";
+    width: 60px;
+    height: 20px;
+    background: #f2d7d5;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    transform: rotate(-5deg);
+}
+
+/* Image scrapbook style */
+img {
+    margin-top: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transform: rotate(-2deg);
+}
+
+/* Date */
+.date {
+    font-size: 0.9em;
+    color: #a26769;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #a26769;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8b4a0;
+    background-color: #fff;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background-color: #a26769;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

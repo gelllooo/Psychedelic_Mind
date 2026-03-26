@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>📁 My Albums</h1>
+
+<div style="text-align:center;">
+    <a href="/create_album">➕ New Album</a>
+</div>
+
+{% for album in albums %}
+<div class="card">
+    <h2>{{ album.name }}</h2>
+    <a href="/album/{{ album.id }}">Open Album →</a>
+</div>
+{% endfor %}
+
+<a href="/">← Back</a>
+
+</body>
+</html>
